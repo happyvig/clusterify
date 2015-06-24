@@ -1,0 +1,36 @@
+{
+  "name": "clusterify",
+  "version": "0.0.1",
+  "description": "Converts a non-cluster project into a 'node-cluster'ed project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./lib/index.js",
+    "debugger": "node --debug-brk=5858 --nolazy ./lib/index.js"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "clusterify": "./bin/index"
+  },
+  "directories": {
+    "bin": "./bin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/happyvig/clusterify.git"
+  },
+  "keywords": [
+    "node-cluster"
+  ],
+  "author": "Vignesh Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/happyvig/clusterify/issues"
+  },
+  "homepage": "https://github.com/happyvig/clusterify#readme",
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "moment": "^2.10.3",
+    "yargs": "^3.11.0"
+  }
+}
